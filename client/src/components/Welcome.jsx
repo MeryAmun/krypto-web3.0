@@ -12,8 +12,8 @@ const [loading, setLoading] = useState(false)
   const handleSubmit = () => {}
   return (
     <div className="flex w-full justify-center items-center">
-      <div className="flex md:flex-ro flex-col items-start justify-between md:p-20 py-12 px-4">
-        <div className="flex flex-1 justify-start flex-col mf:mr-10">
+      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
+      <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
         <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Crypto <br /> across the world
           </h1>
@@ -43,6 +43,10 @@ const [loading, setLoading] = useState(false)
              Blockchain
             </div>
           </div>
+          
+        </div>
+        
+      
         </div>
         <div className="flex flex-col flex-1 items-center w-full mf:mt-0 mt-10">
           <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card white-glassmorphism">
@@ -83,8 +87,6 @@ const [loading, setLoading] = useState(false)
                 </button>
               )}
           </div>
-        </div>
-      
         </div>
       </div>
    
