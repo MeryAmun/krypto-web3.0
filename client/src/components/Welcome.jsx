@@ -3,12 +3,13 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import { Loader, companyCommonStyles } from ".";
+import { TransactionContext } from "../context/TransactionContext";
 
 
 const  Welcome = () => {
+  const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 const [loading, setLoading] = useState(false)
-  const connectWallet = () => {}
-  const handleChange = () => {}
+
   const handleSubmit = () => {}
   return (
     <div className="flex w-full justify-center items-center">
